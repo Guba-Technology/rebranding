@@ -7,7 +7,30 @@ app_license = "mit"
 
 # Apps
 # ------------------
+# Include JS/CSS in assets
+app_include_css = "assets/css/rebranding.bundle.css"
+app_include_js = "assets/js/rebranding.bundle.js"
 
+# Web includes
+web_include_js = ["assets/js/rebranding.js"]
+web_include_css = ["assets/css/rebranding.css"]
+
+# Override templates and classes
+override_whitelisted_methods = {
+	"frappe.utils.change_log.show_update_popup": "rebranding.api.ignore_update_popup"
+}
+override_doctype_class = {
+    "Login Page": "rebranding.overrides.login_page.CustomLoginPage"
+}
+
+# Boot hooks
+boot_session = "rebranding.overrides.boot.boot_session"
+
+# Website context
+website_context = {
+    "favicon": "/assets/rebranding/images/favicon.ico",
+    "splash_image": "/assets/rebranding/images/applogo.svg"
+}
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
