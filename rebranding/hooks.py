@@ -25,6 +25,15 @@ override_doctype_class = {
 
 # Boot hooks
 boot_session = "rebranding.overrides.boot.boot_session"
+email_brand_image = "/assets/rebranding/images/applogo.svg"
+default_mail_footer = """
+	<span>
+		Sent via
+		<a class="text-muted" href="https://ethiotelecom.com?source=via_email_footer" target="_blank">
+			ERP
+		</a>
+	</span>
+"""
 
 # Website context
 website_context = {
