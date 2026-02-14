@@ -9,6 +9,10 @@
     display: none !important;
 }
 
+.footer-powered{
+	display: none!important;
+}
+
 /* Custom Footer */
 .footer {
     padding: 1rem;
