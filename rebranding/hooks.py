@@ -10,6 +10,22 @@ app_license = "mit"
 # Include JS/CSS in assets
 app_include_css = "assets/css/rebranding.bundle.css"
 app_include_js = "assets/js/rebranding.bundle.js"
+fixtures = [
+    {
+        "dt": "Role",
+        "filters": [["disabled", "=", 0], ["name", "!=", "System Manager"]]
+    },
+    {
+        "dt": "Role Profile"
+    },
+    {
+        "dt": "Module Profile"
+    }
+]
+patches = [
+    "rebranding.patches.email_account_patch"
+]
+
 
 # Web includes
 web_include_js = ["assets/js/rebranding.js"]
