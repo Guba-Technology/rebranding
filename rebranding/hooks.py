@@ -22,8 +22,8 @@ fixtures = [
         "dt": "Module Profile"
     }
 ]
-patches = [
-    "rebranding.patches.email_account_patch"
+before_migrate = [
+    "rebranding.patches.email_account_patch.execute"
 ]
 
 
