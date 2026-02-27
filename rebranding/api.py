@@ -40,7 +40,7 @@ def whitelabel_patch():
         "System Settings", "hide_footer_in_auto_email_reports", 1
     )
     frappe.db.set_single_value(
-        "Website Settings", "app_name", "Tele ERP"
+        "Website Settings", "app_name", "ERPlite"
     )
     frappe.db.set_single_value(
         "Website Settings", "app_logo", "/assets/rebranding/images/applogo.svg"
@@ -52,13 +52,13 @@ def whitelabel_patch():
         "Website Settings", "splash_image", "/assets/rebranding/images/applogo.svg"
     )
     frappe.db.set_single_value(
-        "Website Settings", "copyright", f"{frappe.utils.now_datetime().year} Tele ERP"
+        "Website Settings", "copyright", f"{frappe.utils.now_datetime().year} ERPlite"
     )
     frappe.db.set_single_value(
-        "Website Settings", "title_prefix", "Tele ERP - "
+        "Website Settings", "title_prefix", "ERPlite - "
     )
     frappe.db.set_single_value(
-        "Website Settings", "footer_powered", "Ethio Telecom"
+        "Website Settings", "footer_powered", "Ethio telecom"
     )
 
 def update_field_label():
