@@ -5,7 +5,7 @@ def execute():
     frappe.db.sql("DELETE FROM `tabEmail Account`")
     
     # Delete roles except System Manager
-    frappe.db.sql("DELETE FROM `tabRole` WHERE name != 'System Manager'")
+     frappe.db.sql("DELETE FROM `tabRole` WHERE name NOT IN ('System Manager', 'Workspace Manager')")
     
     # Delete role and module profiles
     frappe.db.sql("DELETE FROM `tabRole Profile`")
