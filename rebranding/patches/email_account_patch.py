@@ -22,7 +22,6 @@ def email_account():
             "doctype": "Email Account",
             "email_account_name": account_name,
             "email_id": "cloud@ettelerp.com",
-            "company": "Marye Guba",
             "smtp_server": "smtp.mail.us-east-1.awsapps.com",
             "smtp_port": 465,
             "password": password,
