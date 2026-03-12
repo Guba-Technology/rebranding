@@ -55,7 +55,7 @@ def whitelabel_patch():
         "Website Settings", "copyright", f"{frappe.utils.now_datetime().year} ERPlite"
     )
     frappe.db.set_single_value(
-        "Website Settings", "title_prefix", "ERPlite - "
+        "Website Settings", "title_prefix", "Ethio telecom ERPlite"
     )
     frappe.db.set_single_value(
         "Website Settings", "footer_powered", "Ethio telecom"
