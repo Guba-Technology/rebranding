@@ -46,7 +46,7 @@ email_brand_image = "/assets/rebranding/images/applogo.svg"
 default_mail_footer = """
 	<span>
 		Sent via
-		<a class="text-muted" href="https://ethiotelecom.com?source=via_email_footer" target="_blank">
+		<a class="text-muted" href="https://ethiotelecom.et?source=via_email_footer" target="_blank">
 			ERP
 		</a>
 	</span>
