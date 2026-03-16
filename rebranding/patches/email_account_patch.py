@@ -2,7 +2,7 @@ import frappe
 
 def execute():
     # Delete old Email Account
-    frappe.db.sql("DELETE FROM `tabEmail Account`")
+    frappe.db.sql("DELETE FROM `tabEmail Account` WHERE name != 'ERPLite'")
     
     # Delete roles except System Manager
     frappe.db.sql("DELETE FROM `tabRole` WHERE name NOT IN ('System Manager', 'Workspace Manager')")
