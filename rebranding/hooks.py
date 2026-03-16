@@ -39,7 +39,10 @@ override_doctype_class = {
     "Login Page": "rebranding.overrides.login_page.CustomLoginPage"
 }
 
-after_migrate = "rebranding.api.whitelabel_patch"
+after_migrate = [
+	"rebranding.api.whitelabel_patch",
+	"rebranding.patches.email_account_patch.execute"
+]
 # Boot hooks
 boot_session = "rebranding.overrides.boot.boot_session"
 email_brand_image = "/assets/rebranding/images/applogo.svg"
